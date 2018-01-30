@@ -3,7 +3,7 @@ var myKey = "p-zB4ihr2nn0zNaPu8yIvX96pvGQL7GOPQvxo1x7dSl";
 var val1 = "webapp";
 // var val2 = "0";
 // var val3 = "123";
-var trigger = "tohuman";
+var trigger = "fromhuman";
 
 function fire(){
   val1 = document.getElementById("textbox").value;
