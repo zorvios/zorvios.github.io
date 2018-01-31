@@ -17,8 +17,8 @@ function fire(){
   request.onreadystatechange = function() {
     if (request.readyState === 4) {
       
-     f.submit();
-     window.close();
+      window.open('','_parent','');
+      window.close();
       
       // alert("request got : " + request.responseText);
     }
