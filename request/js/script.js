@@ -17,9 +17,8 @@ function fire(){
   request.onreadystatechange = function() {
     if (request.readyState === 4) {
       
-      document.forms['certform'].submit();
-      hide(document.getElementById('divform'));
-      unHide(document.getElementById('closelink'));
+     f.submit();
+     window.close();
       
       // alert("request got : " + request.responseText);
     }
