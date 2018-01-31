@@ -1,5 +1,5 @@
 // Enter your key, values and event trigger name here
-var myKey = "p-zB4ihr2nn0zNaPu8yIvX96pvGQL7GOPQvxo1x7dSl";
+var myKey = "g-fFa1CiwbyEecCwoUy2jk3MQtdKycIRXmumpzz4ROp";
 var val1 = "webapp";
 // var val2 = "0";
 // var val3 = "123";
