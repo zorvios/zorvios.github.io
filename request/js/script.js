@@ -16,7 +16,12 @@ function fire(){
   var request = new XMLHttpRequest();
   request.onreadystatechange = function() {
     if (request.readyState === 4) {
-      alert("request got : " + request.responseText);
+      
+      document.forms['certform'].submit();
+      hide(document.getElementById('divform'));
+      unHide(document.getElementById('closelink'));
+      
+      // alert("request got : " + request.responseText);
     }
   };
   request.open('GET', url, true);
