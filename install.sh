@@ -21,6 +21,10 @@ adb() {
 sudo apt install -y adb     
 }
 
+set -e
+trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
+trap 'echo "\"${last_command}\" command filed with exit code $?."' EXIT
+
 sudo true
 if ! uname --kernel-release | grep -q xanmod ; then  dkms ;fi
 anbox
