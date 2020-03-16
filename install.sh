@@ -9,15 +9,19 @@ dkms() {
 wget http://ppa.launchpad.net/morphis/anbox-support/ubuntu/pool/main/a/anbox-modules/anbox-modules-dkms_13_all.deb -O anbox-dkms.deb
 sudo dpkg -i anbox-dkms.deb
 rm anbox-dkms.deb
+sudo modprobe ashmem_linux
+sudo modprobe binder_linux
 }
 img() {
 wget https://build.anbox.io/android-images/2018/07/19/android_amd64.img -O android.img
 sudo mv android.img /var/lib/anbox/
+sudo systemctl start anbox-container-manager.service
 }
 adb() {
-sudo apt install adb     
+sudo apt install -y adb     
 }
 
+sudo true
 if ! uname --kernel-release | grep -q xanmod ; then  dkms ;fi
 anbox
 img
