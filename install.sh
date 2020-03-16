@@ -3,6 +3,7 @@
 anbox() { 
 wget https://github.com/zorvios/zorvios.github.io/raw/master/anbox_0.0.1-0_amd64.deb -O anbox.deb
 sudo dpkg -i anbox.deb
+rm anbox.deb
 }
 dkms() {
 wget http://ppa.launchpad.net/morphis/anbox-support/ubuntu/pool/main/a/anbox-modules/anbox-modules-dkms_13_all.deb -O anbox-dkms.deb
