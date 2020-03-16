@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# bash <(curl -s https://raw.githubusercontent.com/zorvios/zorvios.github.io/master/install.sh)
 anbox() { 
 wget https://github.com/zorvios/zorvios.github.io/raw/master/anbox_0.0.1-0_amd64.deb -O anbox.deb
 sudo dpkg -i anbox.deb
